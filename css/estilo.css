@@ -1,0 +1,63 @@
+body{
+    background: #E9E9E9;
+}
+
+.contenedor{
+    width: 500px;
+    height: 500px;
+    background: #fff;
+    padding: 10px;
+    border: 10px solid orange;
+    margin: 20px;
+
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    /*PRIMERA PROPIEDAD
+    Elegimos la forma en la que queremos que se muestren los elementos
+                    >> VALORES <<
+    /row(Defecto)/Column/row-reverse/column reverse/*/
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /*SEGUNDA PROPIEDAD
+    Permite colocar los elementos segun sus tamaños
+                    >> VALORES <<
+    wrap/nowrap/wrap-reverse/nowrap-reverse/*/
+    /*flex-wrap: nowrap;*/
+
+    /*ATAJO PROPIEDAD #2
+    Atajo para las dos propiedades anteriores
+    
+    flex-flow: column nowrap;*/
+
+    /*TERCERA PROPIEDAD
+    Permite mover los elementos, centrarlos, etc.
+                    >> VALORES <<
+    start(DEFECTO)/end/center/space-between/space-around/space-evenly
+    justify-content: cen ter;*/
+
+    /*CUARTA PROPIEDAD
+    Permite alinear los elementos de forma vertical aplicable solo a grupos 
+    que esten en ubicados en una sola fila (CUANDO SE TRABAJAN ROWS o NOWRAP)
+                    >> VALORES <<
+    start/end/baseline/center/stretch(Funciona cuando tenemos un alto automatico es decir no definido(DEFECTO))
+    align-items: center;*/
+    
+    /*QUINTA PROPIEDAD
+    Permite alinear los elementos de forma vertical aplicable solo a grupos 
+    que no esten solo en una fila (CUANDO SE TRABAJAN COLUMN o WRAP)
+                    >> VALORES <<
+    start/end/space-between/space-around*/
+    align-content: center;
+}
+
+.elemento{
+    color: #fff;
+    margin: 5px;
+    width: 200px;
+    height: 50px;
+    background: #E67E22;
+    text-align: center;
+}
